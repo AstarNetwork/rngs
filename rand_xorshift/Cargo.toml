@@ -1,6 +1,6 @@
 [package]
-name = "rand_xorshift"
-version = "0.3.0" # NB: When modifying, also modify html_root_url in lib.rs
+name = "parity_rand_xorshift"
+version = "0.1.0" # NB: When modifying, also modify html_root_url in lib.rs
 authors = ["The Rand Project Developers", "The Rust Project Developers"]
 license = "MIT OR Apache-2.0"
 readme = "README.md"
@@ -18,7 +18,7 @@ edition = "2018"
 serde1 = ["serde"]
 
 [dependencies]
-rand_core = { version = "0.6", default-features = false, path = "../../rand/rand_core" }
+rand_core = { version = "0.6", default-features = false }
 serde = { version = "1.0.118", default-features = false, features = ["derive"], optional = true }
 parity-scale-codec = { version = "2.0", default-features = false, features = ["derive"] }
 sp-std = { default-features = false, version = '3.0.0' }
