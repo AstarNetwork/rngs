@@ -12,15 +12,6 @@ autobenches = true
 edition = "2018"
 publish = false
 
-[workspace]
-members = [
-    "rand_jitter",
-    "rand_isaac",
-    "rand_xorshift",
-    "rand_xoshiro",
-    "rand_hc",
-]
-
 [dev-dependencies]
 # Only for benches:
 rand_core = { version = "0.6", features = ["getrandom"] }
